@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saloon | consult</title>
+    <link href="css/appoint.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="container">
+        <img src="img/barber.jpg" id="barber"/>
+        <h1>MODERN NAI</h1>
+        <h2>Slot Booking</h2>
+        <form class="appoint" method="post" action="appoint.php">
+            <input type="text" name="name" placeholder="Name" id="name"/>
+            <input type="text" name="mobile" placeholder="Mobile" id="mobile"/>
+            <select name="service" id="service">
+                <option value=""disabledselected hidden>Select Services</option>
+                <option value="Cutting">Cutting</option>
+                <option value="Shaving">Shaving</option>
+                <option value="Styling">Styling</option>
+                <option value="Trimming">Trimming</option>
+                <option value="Facial">Facial</option>
+                <option value="Groom">Groom</option>
+            </select>
+            <input type="submit" value="Book Now" id="submit"/>
+        </form>
+    </div>
+</body>
+</html>

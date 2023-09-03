@@ -1,0 +1,457 @@
+*{
+    padding:0;
+    margin:0;
+    text-decoration:none;
+    list-style:none;
+    box-sizing: border-box;
+}
+body{
+    font-family:montserrat;
+}
+nav{
+    background-color: black;
+    border-radius: 5px;
+    height:80px;
+    width:100%;
+}
+.logo{
+    font-size: 35px;
+    line-height:80px;
+    padding:0 0 0 150px;
+    font-weight:bold;
+}
+#logo{
+    color:white;
+}
+#toggle{
+    display:none;
+}
+ul{
+    display: flex;
+    flex-direction:row;
+    float: right;
+    margin-right:22%;
+}
+li{
+    line-height: 80px;
+    font-size:22px;
+    margin-right: 25px;
+}
+#navb{
+    color:white;
+}
+#navb.active,#navb:hover{
+    background:#07be9d;
+    border-radius: 13px;
+    padding:4px 12px;
+    transition: .5s;
+}
+.consult{
+    background-color: #07be9d;
+    justify-content: center;
+    position:absolute;
+    top:20px;
+    right:120px;
+    line-height:40px;
+    border-radius: 15px;
+    font-weight:bold;
+    font-size:20px;
+    padding:2px 10px;
+    color:white;
+}
+.consult:hover{
+    background:#07be9d;
+    border-radius: 13px;
+    padding:4px 12px;
+    transition: .5s;
+}
+
+.image{
+    width:804px;
+    height:590px;
+    position:absolute;
+    right:0px;
+    border:1px solid black;    
+}
+.text{
+    position: absolute;
+    top:22%;
+    left:155px;
+}
+#text{
+    font-family:'caprasimo',"algerian";
+    font-size:82px;
+    margin-bottom:5px;
+    transform: rotate(-1deg);
+}
+.groom{
+    background-color:#07be9d;
+    color:white;
+    margin:4px;
+    border-radius:10px;
+}
+.ur{
+    color:white;
+}
+.para{
+    position: absolute;
+    top: 64%;
+    left: 156px;
+}
+#para{
+    line-height: 30px;
+    word-spacing: 1px;
+    font-size:21px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.appoint{
+    border-radius: 15px;
+    padding:7px;
+    width: 220px;
+    height:55px;
+    background-color: #07be9d;
+    color:white;
+    font-size:16px;
+}
+#play{
+    border:2px solid black;
+    border-radius: 100%;
+    font-size:25px;
+    padding: 11px 15px;
+    margin:10px;
+    color:#07be9d;
+}
+.watch{
+    font-size:20px;
+    color:black;
+}
+hr{
+    color:yellow;
+}
+.nav2{
+    position: absolute;
+    top:670px;
+    border-radius: 5px;
+}
+#nav2{
+    float:none;
+    margin:0px;
+    justify-content: space-evenly;
+}
+#elements{
+    color:white;
+}
+
+#mnai4{
+    position: absolute;
+    top:111%;
+    left:17%;
+    width:120px;
+    height:145px;
+    border:5px solid black;
+    border-radius: 5px;
+
+}
+#mnai5{
+    position: absolute;
+    top:113%;
+    left:30%;
+    width:200px;
+    height:250px;
+    border:5px solid black;
+    border-radius: 5px;
+}
+#mnai6{
+    position: absolute;
+    top:138%;
+    left:15%;
+    width:200px;
+    height:250px;
+    border:5px solid black;
+    border-radius: 5px;
+}
+#mnai7{
+    position: absolute;
+    top:150%;
+    left:34%;
+    width:120px;
+    height:145px;
+    border:5px solid black;
+    border-radius: 5px;
+}
+.text1{
+    position: absolute;
+    top:120%;
+    right:15%;
+    font-size: 20px;
+    font-family: "caprasimo","algerian";
+    word-spacing: 3px;
+}
+.text2{
+    position: absolute;
+    top:185%;
+    left:15%;
+    font-family: "caprasimo","algerian";
+    font-size:20px;
+    word-spacing: 3px;
+}
+#mnai8{
+    position: absolute;
+    top:199%;
+    right:30%;
+    width:200px;
+    height:250px;
+    border:5px solid black;
+    border-radius: 5px;
+}
+#mnai2{
+    position: absolute;
+    top:190%;
+    right:18%;
+    width:170px;
+    height:200px;
+    border:5px solid black;
+    border-radius: 5px;
+}
+#mnai1{
+    position: absolute;
+    top:178%;
+    right:31%;
+    width:120px;
+    height:145px;
+    border:5px solid black;
+    border-radius: 5px;
+}
+.footer{
+    position: absolute;
+    top:236%;
+    background-color:black;
+    width:100%;
+    height: 80px;
+    text-align: center;
+    padding-top:35px;
+    color:white;
+}
+/*@media (max-width:480px){
+    nav{
+        height: 70px;
+    }
+    #logo{
+        position: absolute;
+        top:0px;
+        left:20%;
+        font-size: 35px;
+    }
+    #toggle{
+        display:none;
+    }
+    .fa-bars{
+        color:white;
+        position: absolute;
+        top:21px;
+        left:12px;
+        font-size:35px;
+    }
+    .navigation-menu{
+        display:none;
+    }
+    #toggle:checked ~ .navigation-menu{
+        display: flex;
+        flex-direction:column;
+        float: left;
+        background-color: black;
+        position: absolute;
+        top:71px;
+        left:1px;
+        height:55%;
+        width:55%;
+        border-radius: 5px;
+        z-index: 1;
+    }
+    .navigation-menu li{
+        line-height: 70px;
+        font-size:22px;
+        margin-right: 0px;
+        text-align: center;
+    }
+    .consult{
+        display: none;
+    }
+    .image{
+        width:84%;
+        height:60%;
+        position: absolute;
+        top:13%;
+        left:8%;
+        border: 6px solid black;
+        border-radius: 10px;
+    }
+    .text{
+        position: absolute;
+        top:55%;
+        left:12%;
+
+    }
+    #text{
+        font-family:'caprasimo',"algerian";
+        font-size:28px;
+        color:white;
+        transform: rotate(-1deg);
+    }   
+    .para{
+        position: absolute;
+        top:75%;
+        left:3%;
+    }
+    #para{
+        line-height: 25px;
+        font-size:21px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .appoint{
+        border-radius: 15px;
+        margin-top:25px;
+        margin-left:7%;
+        padding:7px;
+        width: 86%;
+        height:55px;
+        background-color: #07be9d;
+        color:white;
+        font-size:25px;
+    }
+    #play,.watch{
+        display: none;
+    }
+    .nav2{
+        position: absolute;
+        top:100%;
+        height:58%;
+    }
+    #nav2{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    #nav2 li{
+        width: 100%;
+        border:2px solid white;
+        border-radius: 10px;
+    }
+    #mnai4{
+        position: absolute;
+        top:160%;
+        left:7%;
+        width:120px;
+        height:145px;
+        border:5px solid black;
+        border-radius: 5px;
+    
+    }
+    #mnai5{
+        position: absolute;
+        top:165%;
+        left:45%;
+        width:200px;
+        height:250px;
+        border:5px solid black;
+        border-radius: 5px;
+    }
+    #mnai6{
+        position: absolute;
+        top:190%;
+        left:1%;
+        width:200px;
+        height:250px;
+        border:5px solid black;
+        border-radius: 5px;
+        z-index: -1;
+    }
+    #mnai7{
+        position: absolute;
+        top:200%;
+        left:60%;
+        width:120px;
+        height:145px;
+        border:5px solid black;
+        border-radius: 5px;
+    }
+    .text1{
+        position: absolute;
+        top:225%;
+        left:10%;
+        text-align: center;
+        font-size: 22px;
+        font-family: "caprasimo","algerian";
+        word-spacing: 1px;
+    }
+    .text1 br,.text2 br{
+        display: none;
+    }
+    #btn{
+        border-radius: 15px;
+        padding:7px;
+        width: 100%;
+        height:55px;
+        background-color: #07be9d;
+        color:white;
+        font-size:25px;
+        margin-left: 5px;
+    }
+    .text2{
+        position: absolute;
+        top:325%;
+        left:0%;
+        text-align: center;
+        font-family: "caprasimo","algerian";
+        font-size:20px;
+        word-spacing: 1px;
+    }
+    #btn1{
+        border-radius: 15px;
+        padding:7px;
+        width: 80%;
+        height:55px;
+        background-color: #07be9d;
+        color:white;
+        font-size:25px;
+        margin-left: 5px;
+    }
+    #mnai8{
+        position: absolute;
+        top:270%;
+        left:2%;
+        width:200px;
+        height:250px;
+        border:5px solid black;
+        border-radius: 5px;
+    }
+    #mnai2{
+        position: absolute;
+        top:285%;
+        right:2%;
+        width:170px;
+        height:200px;
+        border:5px solid black;
+        border-radius: 5px;
+    }
+    #mnai1{
+        position: absolute;
+        top:305%;
+        left:15%;
+        width:120px;
+        height:145px;
+        border:5px solid black;
+        border-radius: 5px;
+    }
+    .footer{
+        position: absolute;
+        top:360%;
+        background-color:black;
+        width:100%;
+        height: 80px;
+        text-align: center;
+        padding-top:35px;
+        color:white;
+    }
+    
+}*/
